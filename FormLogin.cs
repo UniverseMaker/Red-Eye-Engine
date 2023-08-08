@@ -44,7 +44,7 @@ namespace RedEyeEngine
 
         private void submit_Click(object sender, EventArgs e)
         {
-            string[] lt = System.Text.RegularExpressions.Regex.Split(CDAU.Login("wt88zx", "morian1", ""), "/RESULT/");
+            string[] lt = System.Text.RegularExpressions.Regex.Split(CDAU.Login("", "", ""), "/RESULT/");
             if (lt[0].IndexOf("document.location.replace(\"http://www.daum.net/\");") != -1)
             {
                 Cookie = lt[1];
